@@ -21,10 +21,10 @@ public class RestuarantBill
     public static void main()
     {
         //Initializes taxPercent to hold value of 0.0675.
-        double taxPercent = 6.75/100.0;
+        double taxRate = 6.75/100.0;
         
         //Initializes taxPercent to hold value of 0.2.
-        double tipPercent = 20.0/100;
+        double tipRate = 20.0/100;
         
         //Declares variable mealCharge to hold a double value.
         double mealCharge;
@@ -36,11 +36,11 @@ public class RestuarantBill
         mealCharge = Double.parseDouble(input);
         
         //Initializes taxAmount to store the product of mealCharge and taxPercent.
-        double taxAmount = mealCharge * taxPercent;
+        double taxAmount = mealCharge * taxRate;
         
         //Initializes tipAmount to store product of the sum of mealCharge and taxAmount multiplied
         //by tipPercent.
-        double tipAmount = (mealCharge + taxAmount) * tipPercent;
+        double tipAmount = (mealCharge + taxAmount) * tipRate;
         
         //Initializes totalBill to store sum of mealCharge, taxAmount, and tipAmount.
         double totalBill = mealCharge + taxAmount + tipAmount;
